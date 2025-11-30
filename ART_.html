@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <!-- Skip to content for accessibility -->
+    <a href="#gallery" class="skip-link">Skip to gallery</a>
+
+    <header class="fadeDropIn">
+      <h1>Art Gallery</h1>
+
+      <nav class="main-nav">
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        <div class="nav-links">
+          <a href="#gallery">Gallery</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <button id="themeToggle" aria-label="Toggle dark and light theme">🌓</button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Discover the soul of art</h2>
+      <p>Browse, feel, and connect with timeless masterpieces.</p>
+    </section>
+
+    <!-- Search Bar -->
+    <section class="search-section">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search quotes, artists, or themes..."
+        aria-label="Search artwork"
+      />
+    </section>
+
+    <!-- Gallery -->
+    <main id="gallery" class="gallery">
+      <div class="item" data-caption="“The aim of art is to represent not the outward appearance of things, but their inward significance.” — Aristotle">
+        <img src="images/1751563006557.jpg" alt="Abstract emotion in colors" />
+      </div>
+      <div class="item" data-caption="“Art reflects divine perfection.” — Michelangelo">
+        <img src="images/1751563006489.jpg" alt="Classical sculpture style painting" />
+      </div>
+      <div class="item" data-caption="“Everything you’ll ever need to know is within you...”">
+        <img src="images/1751563006500.jpg" alt="Spiritual geometric art" />
+      </div>
+      <div class="item" data-caption="“The aim of art is to represent not the outward appearance of things...”">
+        <img src="images/1751563006525.jpg" alt="Minimalist black and white" />
+      </div>
+      <div class="item" data-caption="“The echo of the soul in colors and shapes.”">
+        <img src="images/1751563006536.jpg" alt="Vibrant expressionist strokes" />
+      </div>
+    </main>
+
+    <!-- Upload Section -->
+    <section class="upload-section" id="contact">
+      <h3>Share Your Art</h3>
+      <form id="uploadForm" action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" id="imageInput" accept="image/*" required />
+        <img id="imagePreview" src="" alt="Preview" style="display: none;" />
+        <button type="submit">Upload Art</button>
+      </form>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer">
+      <button id="closeLightbox" aria-label="Close">&times;</button>
+      <button id="prevBtn" aria-label="Previous image">&#10094;</button>
+      <img id="lightboxImg" src="" alt="" />
+      <p id="lightboxCaption"></p>
+      <button id="nextBtn" aria-label="Next image">&#10095;</button>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <h2>About This Gallery</h2>
+      <p>
+        This gallery celebrates the emotional and philosophical depth of art.
+        Every piece tells a story — not just with color and form, but with meaning.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>Hope is just an illusion - mnu</p>
+      <p>&copy; 2025 Art Gallery. All art submissions are appreciated.</p>
+    </footer>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+  </body>
+</html> 

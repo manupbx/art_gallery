@@ -1,0 +1,60 @@
+/* Basic setup for the page */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #F5F3E9; /* Off-white background from image */
+    font-family: 'Raleway', sans-serif;
+}
+
+/* The main black card */
+.logo-card {
+    background-color: #121212; /* Black background of the card */
+    padding: 60px 80px;
+    border-radius: 20px; /* Creates the rounded corners */
+    display: inline-block; /* Makes the card size fit its content */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* The circular logo element */
+.logo-circle {
+    width: 280px;
+    height: 280px;
+    border: 3px solid #13e4be; /* The white circular border */
+    border-radius: 50%; /* This makes the div a perfect circle */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container for the text lines */
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #EFEFEF; /* White color for all text */
+}
+
+/* Styling for the main brand name "EVOLÉ" */
+.brand-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem; /* 48px */
+    font-weight: 500;
+}
+
+/* Styling for the custom leaf-like 'X' character */
+.leaf-x {
+    display: inline-block;
+    margin-left: 8px; /* Space between the É and the symbol */
+}
+
+/* Styling for the tagline "PROSPICIMUS" */
+.tagline {
+    margin-top: 12px;
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+    letter-spacing: 0.3em; /* Spacing between letters */
+    text-indent: 0.3em; /* Aligns the start of the text with the brand name */
+}
